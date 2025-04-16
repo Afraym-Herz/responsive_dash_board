@@ -11,32 +11,48 @@ class MyCardSection extends StatefulWidget {
 }
 
 class _MyCardSectionState extends State<MyCardSection> {
-  
-  int currentIndex = 0 ;
-  late PageController pageController ;
+  int currentIndex = 0;
+  late PageController pageController;
   @override
   void initState() {
     pageController = PageController();
 
-    pageController.addListener(
-      (){
-       currentIndex = pageController.page!.toInt();
-       setState((){});
-      }
-    );
-    
+    pageController.addListener(() {
+      currentIndex = pageController.page!.toInt();
+      setState(() {});
+    });
+
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
-    return  Column(
-      children: [
-        Text("My Card" , style: AppStyles.semiBold20 ,),
-        SizedBox(height: 20,),
-        MyCardPageView(pageController: pageController,) ,
-        SizedBox(height: 20,),
-        DotsIndicator(currentIndex: currentIndex) ,
-      ],
+    return Padding(
+      padding: const EdgeInsets.only( top:30),
+      child: Container(
+        padding: EdgeInsets.all(24),
+        decoration: ShapeDecoration(
+         color: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("My Card", style: AppStyles.semiBold20),
+            SizedBox(height: 20),
+            MyCardPageView(pageController: pageController),
+            SizedBox(height: 20),
+            DotsIndicator(currentIndex: currentIndex),
+            SizedBox(height: 20,),
+            Divider(
+              thickness: .5,
+            ),
+            SizedBox(height: 20,),
+          ],
+        ),
+      ),
     );
   }
 }

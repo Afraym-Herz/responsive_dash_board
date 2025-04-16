@@ -8,7 +8,8 @@ class MyCardPageView extends StatelessWidget {
   final PageController pageController ;
   @override
   Widget build(BuildContext context) {
-    return ExpandablePageView(children: List.generate(3, (index) => MyCard()) ); 
-
+    return ExpandablePageView(
+      controller: pageController,
+      children: List.generate(3, (index) => MyCard()) ); 
   }
 }
