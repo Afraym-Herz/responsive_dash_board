@@ -8,10 +8,11 @@ abstract class AppImages {
   static const String madrani = "lib/assets/images/madrani.svg" ;
   static const String myinvestments = "lib/assets/images/myInvestments.svg" ;
   static const String myTransaction = "lib/assets/images/myTransaction.svg" ;
-  static const String nameCard = "lib/assets/images/nameCard.svg" ;
+  static const String nameCard = "lib/assets/images/nameCard.png" ;
   static const String rectanglePhoto = "lib/assets/images/rectanglePhoto.svg" ;
   static const String settings = "lib/assets/images/setting.svg" ;
   static const String statistics = "lib/assets/images/statistics.svg" ;
   static const String statisticsCircule = "lib/assets/images/statisticsCircule.svg" ;
   static const String walletAccount = "lib/assets/images/walletAccount.svg" ;  
+  static const String sidePhoto = 'lib/assets/images/sidePhoto.svg' ;
 }
