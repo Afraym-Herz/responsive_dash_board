@@ -15,4 +15,5 @@ abstract class AppImages {
   static const String statisticsCircule = "lib/assets/images/statisticsCircule.svg" ;
   static const String walletAccount = "lib/assets/images/walletAccount.svg" ;  
   static const String sidePhoto = 'lib/assets/images/sidePhoto.svg' ;
+  static const String probablityCircule = 'lib/assets/images/probibality_circule.png';
 }

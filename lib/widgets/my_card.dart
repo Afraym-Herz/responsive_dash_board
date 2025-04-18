@@ -12,7 +12,7 @@ class MyCard extends StatelessWidget {
       aspectRatio: 420 / 215,
       child: Container(
         decoration: ShapeDecoration(
-          image: const DecorationImage(image: AssetImage(AppImages.nameCard) , fit: BoxFit.fill  ),
+          image: const DecorationImage(image: AssetImage(AppImages.nameCard)  ),
           color: const Color(0xff4EB7F2),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -30,7 +30,7 @@ class MyCard extends StatelessWidget {
                 subtitle: const Text("Syah Bandi", style: AppStyles.medium20),
                 trailing: SvgPicture.asset(AppImages.sidePhoto),
               ),
-              SizedBox(height: 32),
+              Spacer() ,
                Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
