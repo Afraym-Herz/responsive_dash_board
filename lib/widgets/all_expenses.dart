@@ -18,7 +18,7 @@ class _AllExpensesState extends State<AllExpenses> {
     return BackgroundWidget(
       child: const Column(
         children: [
-           AllExpensesHeader(),
+           SectionHeader(title: 'All Expenses',),
           SizedBox(height: 16),
           AllExpensesBalanceRow() ,
         ],
